@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PEOPLE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Kanit:wght@500&family=Karla:wght@300&family=Poppins&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<style>
+* {
+    box-sizing: border-box
+    
+}
+body{
+    margin: 0px;
+}
+
+.mySlides1{
+    float: left;
+    margin: 50px;
+    display: none;
+    width: 600px;
+    height: 400px;
+
+}
+.mySlides1 img{
+  width: 600px;
+  height: 400px;
+}
+/* Slideshow container */
+.slideshow-container {
+  height: 620px;
+  background-color: lightgoldenrodyellow;
+}
+.paragraph{
+  
+    padding-right: 20px;
+    font-family: 'Kanit', sans-serif;
+
+}
+.paragraph h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav > ul > li > a {
+    color: black;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+nav > ul > li > a:hover{
+    background-color:rgb(231, 231, 203);
+}
+#people{
+    background-color:rgb(231, 231, 203);
+}
+</style>
+</head>
+<body>
+
+
+<div class="slideshow-container">
+<nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a id ="people" href="People.html">People</a></li>
+            <li><a href="destinations.html">destinations</a></li>
+        </ul>
+</nav>
+  <div class="mySlides1">
+    <img src="sources/egpeople1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="sources/egpeople2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="sources/egpeople3.png" style="width:100%">
+  </div>
+  <div class="mySlides1">
+    <img src="sources/egpeople4.png" style="width:100%">
+  </div>
+  <div class="paragraph">
+      <h1>Egyptians</h1>
+      <p>Egyptians are the people originating from the country of Egypt. Egyptian identity is closely tied to geography. The population is concentrated in the lower Nile Valley, a small strip of cultivable land stretching from the First Cataract to the Mediterranean and enclosed by desert both to the east and to the west. This unique geography has been the basis of the development of Egyptian society since antiquity.
+
+        The daily language of the Egyptians is a continuum of the local varieties of Arabic; the most famous dialect is known as Egyptian Arabic or Masri. Additionally, a sizable minority of Egyptians living in Upper Egypt speak Sa'idi Arabic. Egyptians are predominantly adherents of Sunni Islam with a Shia minority and a significant proportion who follow native Sufi orders.[15] A considerable percentage of Egyptians are Coptic Christians who belong to the Coptic Orthodox Church, whose liturgical language, Coptic, is the most recent stage of the ancient Egyptian language and is still used in prayers along with Arabic.</p>
+  </div>
+ 
+</div>
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

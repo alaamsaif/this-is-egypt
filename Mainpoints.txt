@@ -1,0 +1,22 @@
+- New Input type
+- <input> Tag Attributes
+- HTML 5 Semantic & Structural Elements
+o Progress
+o Time
+o <header>
+o <nav>
+o <section>
+o <aside>
+o <footer>
+- SVG
+- google fonts
+- Animitaions
+- font awesome
+- border radiues
+- box shadow
+- gradient
+- local storge
+- new form elemnts
+
+
+
